@@ -26,6 +26,11 @@ def start():
 @bottle.post('/move')
 def move():
     data = bottle.request.json
+    print data
+    
+    # Here is where you write your logic
+    # Look at the data using the heroku logs thing you tried
+    # Write some logic and return an up, left, right, or down
 
     return json.dumps({
         'move': 'left',
